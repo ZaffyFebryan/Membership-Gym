@@ -1,0 +1,4162 @@
+/* FILE INDEX */
+.index {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.index .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/home.png');
+}
+
+.index .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.index .hero .content .satu {
+    flex: 0 0 45%;
+}
+
+.index .hero .content .dua {
+    flex: 0 0 45%;
+}
+
+.index .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.index .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.index .hero .content p {
+    font-size: 1rem;
+    color: #241c15;
+    font-weight: 700;
+    margin-top: -1rem;
+}
+
+.index .hero .content .cta {
+    color: #241c15;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #B0A695;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(1,1,3,0.5);
+}
+
+.index .hero .dua {
+    margin-top: 3.3rem;
+    margin-left: 21rem;
+}
+
+.index .hero .dua .slide {
+    position: relative;
+    margin: 0 auto;
+    display: none;
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.index .hero .dua .dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 1.3rem 2px 0rem 2px;
+    background-color: #838383;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.index .hero .dua .dot .active {
+    background-color: #272727;
+}
+
+/* ------------------------------------------------- FILE INDEXNEW ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.indexnew {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.navbar .navbar-nav a .one {
+    display: block;
+    border-bottom: none;
+}
+
+.navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE';
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none; 
+}
+
+.navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+.navbar .navbar-nav a .four {
+    display: block; 
+    border-bottom: none;
+}
+
+.navbar .navbar-nav a .four::after {
+    content: 'LOGIN'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.navbar .navbar-nav a .four:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.indexnew .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/background1.png');
+}
+
+.indexnew .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.indexnew .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.indexnew .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.indexnew .hero .content p {
+    font-size: 1rem;
+    color: #241c15;
+    font-weight: 700;
+    margin-top: -1rem;
+}
+
+.indexnew .hero .content .cta {
+    color: #241c15;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #B0A695;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(1,1,3,0.5);
+}
+
+/* BAGIAN FOTO */
+.indexnew .galeri {
+    margin-top: 2rem;
+    padding: 1.4rem 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    background-color: #241c15;
+    font-family: 'Poppins', sans-serif;
+}
+
+.indexnew .galeri .outdoor {
+    background-image: url('../img/outdoor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.indexnew .galeri .indoor {
+    background-image: url('../img/indoor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.indexnew .galeri .alat {
+    background-image: url('../img/alat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.indexnew .galeri > div {
+    border-radius: 10px;
+    padding: 160px 20px 20px 20px; 
+    text-align: center; 
+}
+
+/* BAGIAN LAYANAN PERTAMA */
+.indexnew .layanan {
+    background-color: #241c15;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.indexnew .layanan .pertama {
+    padding: 1.4rem 7%;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.indexnew .layanan .pertama h1 {
+    font-size: 2.8rem;
+    color: white;
+    line-height: 1.2;
+}
+
+.indexnew .layanan .pertama h1 span {
+    color: #EBE3D5;
+    text-shadow: none;
+}
+
+.indexnew .layanan .pertama p {
+    font-size: 1rem;
+    color: #EBE3D5;
+    font-weight: 500;
+    margin-top: -1rem;
+}
+
+.indexnew .layanan .pertama .lengkap {
+    color: #241c15;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #EBE3D5;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(1,1,3,0.5);
+}
+
+/* BAGIAN LAYANAN KEDUA */
+.indexnew .layanan .kedua {
+    margin-top: 2rem;
+    padding: 1.4rem 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    background-color: #241c15;
+    font-family: 'Poppins', sans-serif;
+}
+
+.indexnew .layanan .kedua > div {
+    border: 2px solid #EBE3D5;
+    background-color: #EBE3D5;
+    border-radius: 10px;
+    padding: 80px 20px 20px 20px; 
+    text-align: left;
+}
+
+/* BAGIAN KEUNGGULAN PERTAMA */
+.indexnew .keunggulan {
+    margin-top: 4rem;
+    text-align: center; 
+}
+
+.indexnew .keunggulan .pertama h1 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+}
+
+.indexnew .keunggulan .pertama h1 span {
+    color: #EBE3D5;
+    text-shadow: none;
+}
+
+.indexnew .keunggulan .pertama p {
+    font-size: 1rem;
+    color: #EBE3D5;
+    font-weight: 500;
+    margin-top: -1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BAGIAN KEUNGGULAN KEDUA */
+.indexnew .keunggulan .kedua {
+    margin-top: 2rem;
+    padding: 1.4rem 7%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    background-color: #241c15;
+    font-family: 'Poppins', sans-serif;
+}
+
+.indexnew .keunggulan .kedua > div {
+    border: 2px solid #EBE3D5;
+    background-color: #EBE3D5;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    text-align: left; 
+}
+
+/* Bagian FEEDBACK */
+/* Bagian FEEDBACK */
+.indexnew .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.indexnew .carousel-container .pertama {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin-bottom: -3rem;
+}
+
+.indexnew .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 1.4rem;
+    margin-right: 5rem;
+    margin-left: 5rem; 
+    gap: 7rem;
+}
+
+.indexnew .slidee {
+    flex: 0 0 100%;
+    text-align: center;
+    color: #241c15;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #EBE3D5;
+    border: 2px solid #EBE3D5;
+    border-radius: 1rem;
+    flex-shrink: 0;
+}
+
+.indexnew .carousel-controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexnew .prev-btn,
+.indexnew .next-btn {
+    background-color: #b0a695;
+    color: #241c15;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.indexnew .prev-btn:hover,
+.indexnew .next-btn:hover {
+    background-color: #555;
+}
+
+/* FOOTER BARU */
+.indexnew .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.indexnew .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.indexnew .kolomjudul,
+.indexnew .isi {
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.indexnew .kolomjudul {
+    width: 30%; 
+}
+
+.indexnew .isi {
+    width: 65%; 
+}
+
+.indexnew .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.indexnew .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.indexnew .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE LAYANAN ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.layanan {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.layanan .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.layanan .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.layanan .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.layanan .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.layanan .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.layanan .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.layanan .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.layanan .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.layanan .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.layanan .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.layanan .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none;
+}
+
+.layanan .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.layanan .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.layanan .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none;
+}
+
+.layanan .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.layanan .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.layanan .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.layanan .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.layanan .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/bglayanannw.png'); 
+}
+
+.layanan .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layanan .hero .content h4 {
+    color: white;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 3px #241c15;
+    margin-bottom: -2rem;
+}
+
+.layanan .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.layanan .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.layanan .hero .content p {
+    font-size: 1rem;
+    color: #241c15;
+    font-weight: 400;
+    margin-top: -2rem;
+}
+
+/* BAGIAN KELEBIHAN */
+.layanan .kelebihan {
+    margin-top: 2rem;
+    padding: 1.4rem 7%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    background-color: #241c15;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layanan .kelebihan div {
+    border: 2px solid #EBE3D5;
+    background-color: #EBE3D5;
+    border-radius: 10px;
+    padding: 16px 16px 16px 16px; 
+    text-align: center; 
+}
+
+.layanan .kelebihan div > h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.layanan .kelebihan div > h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: -1.6rem;
+}
+
+/* BAGIAN LANGKAH UNTUK BELI LAYANAN PERTAMA*/
+.layanan .langkah .pertama {
+    padding: 1.4rem 7%;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BAGIAN LANGKAH UNTUK BELI LAYANAN KEDUA*/
+.layanan .langkah .kedua {
+    margin-top: -2.4rem;
+    padding: 1.4rem 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    background-color: #241c15;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layanan .langkah .kedua div {
+    border: 2px solid #EBE3D5;
+    background-color: #EBE3D5;
+    border-radius: 10px;
+    padding: 16px 16px 16px 16px; 
+    text-align: center;
+}
+
+.layanan .langkah .kedua div > h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.layanan .langkah .kedua div > h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.layanan .langkah .kedua div > p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: -1.4rem;
+}
+
+/* BAGIAN LAYANAN PERTAMA*/
+.layanan .layanan .pertama {
+    padding: 1.4rem 7%;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -2rem;
+}
+
+.layanan .layanan .kedua{
+    transition: transform 0.5s ease-in-out;
+    padding: 1.4rem;
+    margin-right: 4rem; 
+    margin-left: 4rem; 
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.layanan .layanan .kedua .slide {
+    flex: 0 0 100%;
+    text-align: center;
+    color: #241c15;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #EBE3D5;
+    border: 2px solid #EBE3D5;
+    border-radius: 1rem;
+    flex-shrink: 0;
+} 
+
+.layanan .layanan .kedua .slide .satu {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: -1rem;
+} 
+
+.layanan .layanan .kedua .slide .dua {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+} 
+
+.layanan .layanan .kedua .slide .tiga {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: -0.8rem;
+} 
+
+.layanan .layanan .kedua .slide .empat {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+} 
+
+.layanan .layanan .kedua .slide .empat span {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+} 
+
+.layanan .layanan .kedua .slide .lima {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: -0.8rem;
+} 
+
+.layanan .layanan .kedua .slide .enam {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+} 
+
+.layanan .layanan .kedua .slide .tujuh {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: -0.8rem;
+} 
+
+.layanan .layanan .kedua .slide .delapan {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+} 
+
+.layanan .layanan .kedua .slide .beli {
+    color: #EBE3D5;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem; 
+    font-weight: 600;
+    background-color: #241c15;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 1.8rem;
+    box-shadow: 1px 1px 1px rgba(1,1,3,0.5);
+}
+
+.layanan .layanan .buttons {
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.layanan .prev-btn, .layanan .next-btn {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 14px;
+    background-color: #EBE3D5;
+    color: #241c15;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+
+/* FOOTER BARU */
+.layanan .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layanan .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+}
+
+.layanan .kolomjudul,
+.layanan .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.layanan .kolomjudul {
+    width: 30%; 
+}
+
+.layanan .isi {
+    width: 65%; 
+}
+
+.layanan .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.layanan .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.layanan .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE GALERI ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.galeri {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.galeri .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.galeri .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.galeri .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.galeri .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.galeri .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.galeri .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.galeri .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.galeri .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.galeri .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.galeri .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.galeri .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none;
+}
+
+.galeri .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.galeri .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.galeri .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none;
+}
+
+.galeri .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.galeri .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.galeri .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.galeri .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.galeri .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN FOTO */
+.galeri .galeri {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    padding: 1.4rem 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    background-color: #241c15;
+    font-family: 'Poppins', sans-serif;
+}
+
+.galeri .galeri .outdoor {
+    background-image: url('../img/outdoor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+}
+
+.galeri .galeri .indoor {
+    background-image: url('../img/indoor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+}
+
+.galeri .galeri .alat {
+    background-image: url('../img/alat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+}
+
+.galeri .galeri > div {
+    border-radius: 10px;
+    padding: 280px 20px 2px 20px; 
+    text-align: center; 
+}
+
+/* FOOTER BARU */
+.galeri .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.galeri .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.galeri .kolomjudul,
+.galeri .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.galeri .kolomjudul {
+    width: 30%; 
+}
+
+.galeri .isi {
+    width: 65%; 
+}
+
+.galeri .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.galeri .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.galeri .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE GALERI OUTDOOR ------------------------------------------------- */
+.galeri .galerio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    margin-left: 6rem;
+    margin-top: 7rem;
+    margin-right: 4rem;
+}
+
+.galeri .galerio img {
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Footer */
+.galeri .footer {
+    background-color: #241c15;
+    padding: 1rem 0 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.galeri .footer .social {
+    padding: 1rem 0;
+}
+
+.galeri .footer .social a {
+    color: white;
+    margin: 1rem;
+    font-size: 1.8rem;
+}
+
+.galeri .footer .social a:hover {
+    color: #EBE3D5;
+}
+
+.galeri .footer .links {
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+}
+
+.galeri .footer .links a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+.galeri .footer .links a {
+    color: white;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+}
+
+.galeri .footer .credit {
+    font-size: 0.8rem;
+}
+
+.galeri .footer .credit a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.galeri .footer .credit p {
+    color: white;
+}
+
+/* ------------------------------------------------- FILE GALERI INDOOR ------------------------------------------------- */
+/* BAGIAN FOTO */
+.galeri .galerii {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    margin-left: 6rem;
+    margin-top: 7rem;
+    margin-right: 4rem;
+}
+
+.galeri .galerii img {
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Footer */
+.galeri .footer {
+    background-color: #241c15;
+    padding: 1rem 0 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.galeri .footer .social {
+    padding: 1rem 0;
+}
+
+.galeri .footer .social a {
+    color: white;
+    margin: 1rem;
+    font-size: 1.8rem;
+}
+
+.galeri .footer .social a:hover {
+    color: #EBE3D5;
+}
+
+.galeri .footer .links {
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+}
+
+.galeri .footer .links a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+.galeri .footer .links a {
+    color: white;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+}
+
+.galeri .footer .credit {
+    font-size: 0.8rem;
+}
+
+.galeri .footer .credit a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.galeri .footer .credit p {
+    color: white;
+}
+
+/* ------------------------------------------------- FILE GALERI ALAT ------------------------------------------------- */
+/* BAGIAN FOTO */
+.galeri .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 6rem;
+    margin-top: 7rem;
+    margin-right: 4rem;
+}
+
+.galeri .galeria img {
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Footer */
+.galeri .footer {
+    background-color: #241c15;
+    padding: 1rem 0 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.galeri .footer .social {
+    padding: 1rem 0;
+}
+
+.galeri .footer .social a {
+    color: white;
+    margin: 1rem;
+    font-size: 1.8rem;
+}
+
+.galeri .footer .social a:hover {
+    color: #EBE3D5;
+}
+
+.galeri .footer .links {
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+}
+
+.galeri .footer .links a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+.galeri .footer .links a {
+    color: white;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+}
+
+.galeri .footer .credit {
+    font-size: 0.8rem;
+}
+
+.galeri .footer .credit a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.galeri .footer .credit p {
+    color: white;
+}
+
+/* ------------------------------------------------- FILE CONTACT US ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.contact {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.contact .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.contact .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.contact .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.contact .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.contact .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.contact .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.contact .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.contact .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.contact .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.contact .navbar .navbar-nav a .one {
+    display: block;
+    border-bottom: none;
+}
+
+.contact .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE';
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.contact .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.contact .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none; 
+}
+
+.contact .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.contact .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.contact .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.contact .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.contact .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.contact .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/background1.png');
+}
+
+.contact .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.contact .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.contact .hero .content p {
+    font-size: 1rem;
+    color: #241c15;
+    font-weight: 700;
+    margin-top: -1rem;
+}
+
+.contact .hero .content .cta {
+    color: #241c15;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #B0A695;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(1,1,3,0.5);
+}
+
+/* BAGIAN FORM */
+.contact .isii {
+    margin-bottom: 4rem;
+}
+
+.contact .isii .pertama {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.contact .isii .pertama h1 {
+    font-size: 3rem;
+}
+
+.contact .isii .pertama p {
+    margin-top: -1rem;
+}
+
+.contact .isii .kedua {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+    text-align: left;
+    margin-top: 2rem;
+    background-color: #EBE3D5;
+    padding: 2rem 24rem 2rem 23rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.contact .isii .kedua input {
+    width: 59%;
+}
+
+.contact .isii .kedua button {
+    color: white;
+    background-color: #b0a695;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+}
+
+/* FOOTER BARU */
+.contact .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.contact .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.contact .kolomjudul,
+.contact .isi {
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.contact .kolomjudul {
+    width: 30%; 
+}
+
+.contact .isi {
+    width: 65%; 
+}
+
+.contact .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.contact .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.contact .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE PROFIL ------------------------------------------------- */
+.profil {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.profil .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.profil .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.profil .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* BAGIAN FORM */
+.profil .keseluruhan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profil .kiri, .profil .kanan {
+    flex-basis: 48%;
+    padding: 20px;
+}
+
+.profil .kiri {
+    color: #EBE3D5;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.profil .kiri img {
+    max-width: 400px;
+    max-height: fit-content;
+    border-radius: 20px;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profil .kanan .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+}
+
+.profil .kanan .info h3 {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-left: -4rem;
+}
+
+.profil .kanan .info .satu span {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    background-color: #b0a695;
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+}
+
+.profil .kanan .info .tiga span {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+.profil .kanan .info .dua span {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+.profil .kanan form {
+    background-color: #EBE3D5;
+    color: #241c15;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-right: 4rem;
+    margin-left: -4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profil form {
+    margin-top: 20px;
+}
+
+.profil label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profil input,
+.profil select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.profil input[type="checkbox"],
+.profil label {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.profil input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.profil .checkbox-containersatu {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.profil .checkbox-containerdua {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.profil .checkbox-container input[type="checkbox"] {
+    margin: 0;
+}
+
+.profil .checkbox-container label {
+    margin: 0;
+}
+
+.profil .next {
+    color: #241c15;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #B0A695;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.profil .form .keseluruhan .kanan .terserah {
+    background-color: #EBE3D5;
+    color: #241c15;
+    margin-top: 2rem;
+    margin-left: -4rem;
+    margin-right: 4rem;
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------- FILE JADWAL ------------------------------------------------- */
+.jadwal {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.jadwal .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.jadwal .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.jadwal .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* BAGIAN FORM */
+.jadwal .keseluruhan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jadwal .kiri, .jadwal .kanan {
+    flex-basis: 48%;
+    padding: 20px;
+}
+
+.jadwal .kiri {
+    color: #EBE3D5;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.jadwal .kiri img {
+    max-width: 400px;
+    max-height: fit-content;
+    border-radius: 20px;
+    width: 100%;
+    height: 410px; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.jadwal .kanan .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.jadwal .kanan .info h3 {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-left: -4rem;
+}
+
+.jadwal .kanan .info .satu span {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+.jadwal .kanan .info .tiga span {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+.jadwal .kanan .info .dua span {
+    color: #EBE3D5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    background-color: #b0a695;
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;}
+
+.jadwal .kanan form {
+    background-color: #EBE3D5;
+    color: #241c15;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-right: 4rem;
+    margin-left: -4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jadwal form {
+    margin-top: 20px;
+}
+
+.jadwal label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.jadwal input,
+.jadwal select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.jadwal input[type="checkbox"],
+.jadwal label {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.jadwal input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.jadwal .checkbox-containersatu {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.jadwal .checkbox-containerdua {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.jadwal .checkbox-container input[type="checkbox"] {
+    margin: 0;
+}
+
+.jadwal .checkbox-container label {
+    margin: 0;
+}
+
+.jadwal .next {
+    color: #241c15;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #B0A695;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.jadwal .tulisan {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ------------------------------------------------- FILE TESTDISPLAY ------------------------------------------------- */
+.testd {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.testd .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.testd .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.testd .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* BAGIAN NOTA PROFIL */
+.testd .container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.testd .profil {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 6rem;
+    margin-left: 4rem;
+    background-color: #EBE3D5;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 120%;
+}
+
+.testd .jadwal {
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 4rem;
+    background-color: #EBE3D5;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 120%;
+}
+
+.testd .duaa {
+    margin-top: 6rem;
+    background-color: #EBE3D5;
+    margin-right: 4rem;
+    padding: 2rem;
+    width: 40%;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testd .duaa .form button {
+    color: white;
+    background-color: #b0a695;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+}
+
+/* FOOTER BARU */
+.testd .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.testd .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.testd .kolomjudul,
+.testd .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.testd .kolomjudul {
+    width: 30%;
+}
+
+.testd .isi {
+    width: 65%;
+}
+
+.testd .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.testd .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.testd .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE LOKASI ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.lokasi {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.lokasi .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.lokasi .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.lokasi .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.lokasi .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.lokasi .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.lokasi .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.lokasi .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lokasi .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.lokasi .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.lokasi .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.lokasi .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none;
+}
+
+.lokasi .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE';
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.lokasi .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.lokasi .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none;
+}
+
+.lokasi .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.lokasi .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.lokasi .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.lokasi .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.lokasi .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.lokasi .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/loc.png');
+}
+
+.lokasi .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lokasi .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.lokasi .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.lokasi .hero .content p {
+    color: #241c15;
+}
+
+.lokasi .hero .content .satu {
+    font-size: 1.4rem;
+    color: #241c15;
+    font-weight: 700;
+    margin-bottom: -1rem;
+}
+
+.lokasi .hero .content .dua {
+    font-size: 1rem;
+    color: #241c15;
+    font-weight: 700;
+    margin-top: -1rem;
+}
+
+.lokasi .hero .map {
+    margin-left: 1rem;
+    margin-top: 6rem;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+/* FOOTER BARU */
+.lokasi .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.lokasi .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.lokasi .kolomjudul,
+.lokasi .isi {
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.lokasi .kolomjudul {
+    width: 30%; 
+}
+
+.lokasi .isi {
+    width: 65%; 
+}
+
+.lokasi .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.lokasi .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.lokasi .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE TESTIMONI ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.testimoni {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.testimoni .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.testimoni .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.testimoni .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.testimoni .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.testimoni .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.testimoni .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.testimoni .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimoni .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.testimoni .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.testimoni .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.testimoni .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none; 
+}
+
+.testimoni .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.testimoni .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.testimoni .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none;
+}
+
+.testimoni .navbar .navbar-nav a .two::after {
+    content: 'LOCATION';
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.testimoni .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.testimoni .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.testimoni .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.testimoni .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.testimoni .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/background1.png');
+}
+
+.testimoni .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimoni .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.testimoni .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.testimoni .hero .content p {
+    font-size: 1rem;
+    color: #241c15;
+    font-weight: 700;
+    margin-top: -1rem;
+}
+
+.testimoni .hero .content .cta {
+    color: #241c15;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #B0A695;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(1,1,3,0.5);
+}
+
+/* BAGIAN FORM */
+.testimoni .isii {
+    margin-bottom: 4rem;
+}
+
+.testimoni .isii .pertama {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.testimoni .isii .pertama h1 {
+    font-size: 3rem;
+}
+
+.testimoni .isii .pertama p {
+    margin-top: -1rem;
+}
+
+.testimoni .isii .kedua {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+    text-align: left;
+    margin-top: 2rem;
+    background-color: #EBE3D5;
+    padding: 2rem 24rem 2rem 23rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.testimoni .isii .kedua input {
+    width: 59%;
+}
+
+.testimoni .isii .kedua button {
+    color: white;
+    background-color: #b0a695;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+}
+
+/* FOOTER BARU */
+.testimoni .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.testimoni .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.testimoni .kolomjudul,
+.testimoni .isi {
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.testimoni .kolomjudul {
+    width: 30%; 
+}
+
+.testimoni .isi {
+    width: 65%; 
+}
+
+.testimoni .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.testimoni .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.testimoni .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE ABOUT ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.about {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.about .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.about .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.about .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.about .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.about .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.about .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.about .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.about .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.about .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.about .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none;
+}
+
+.about .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.about .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.about .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none; 
+}
+
+.about .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.about .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.about .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.about .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.about .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.about .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/about.png');
+}
+
+.about .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.about .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.about .isii .bg {
+    background-color: #EBE3D5;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.about .isii .bg .konten {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.about .isii .bg .konten h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+.about .isii .bg .konten p {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+/* FOOTER BARU */
+.about .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.about .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.about .kolomjudul,
+.about .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.about .kolomjudul {
+    width: 30%; 
+}
+
+.about .isi {
+    width: 65%; 
+}
+
+.about .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.about .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.about .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE FAQ ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.faq {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.faq .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.faq .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.faq .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.faq .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.faq .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.faq .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.faq .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.faq .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.faq .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.faq .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none; 
+}
+
+.faq .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.faq .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.faq .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none; 
+}
+
+.faq .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.faq .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.faq .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.faq .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.faq .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.faq .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/faq1.png');
+}
+
+.faq .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.faq .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.faq .isii .bg {
+    background-color: #EBE3D5;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.faq .isii .bg .konten {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.faq .isii .bg .konten h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+.faq .isii .bg .konten p {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+/* FOOTER BARU */
+.faq .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.faq .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.faq .kolomjudul,
+.faq .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.faq .kolomjudul {
+    width: 30%;
+}
+
+.faq .isi {
+    width: 65%; 
+}
+
+.faq .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.faq .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.faq .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE TERMS ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.terms {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.terms .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.terms .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.terms .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.terms .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.terms .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.terms .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.terms .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.terms .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.terms .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.terms .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.terms .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none; 
+}
+
+.terms .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.terms .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.terms .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none; 
+}
+
+.terms .navbar .navbar-nav a .two::after {
+    content: 'LOCATION';
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.terms .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.terms .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.terms .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.terms .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.terms .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/terms.png');
+}
+
+.terms .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.terms .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.terms .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.terms .isii .bg {
+    background-color: #EBE3D5;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.terms .isii .bg .konten {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.terms .isii .bg .konten h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+.terms .isii .bg .konten p {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+/* FOOTER BARU */
+.terms .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.terms .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.terms .kolomjudul,
+.terms .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.terms .kolomjudul {
+    width: 30%; 
+}
+
+.terms .isi {
+    width: 65%; 
+}
+
+.terms .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.terms .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.terms .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE PRIVACY ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.privacy {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.privacy .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.privacy .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.privacy .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.privacy .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.privacy .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.privacy .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.privacy .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.privacy .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.privacy .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.privacy .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.privacy .navbar .navbar-nav a .one {
+    display: block; 
+    border-bottom: none;
+}
+
+.privacy .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.privacy .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.privacy .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none; 
+}
+
+.privacy .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.privacy .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.privacy .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none;
+}
+
+.privacy .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.privacy .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.privacy .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/privacy.png');
+}
+
+.privacy .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.privacy .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.privacy .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.privacy .isii .bg {
+    background-color: #EBE3D5;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.privacy .isii .bg .konten {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.privacy .isii .bg .konten h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+.privacy .isii .bg .konten p {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+/* FOOTER BARU */
+.privacy .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.privacy .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.privacy .kolomjudul,
+.privacy .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.privacy .kolomjudul {
+    width: 30%; 
+}
+
+.privacy .isi {
+    width: 65%; 
+}
+
+.privacy .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.privacy .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.privacy .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* ------------------------------------------------- FILE HEALTH ------------------------------------------------- */
+/* BAGIAN NAVBAR */
+.health {
+    background-color: #241c15;
+    margin: 0;
+    padding: 0;
+}
+
+.health .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* NAVBAR LOGO */
+.health .navbar .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.health .navbar .navbar-logo span {
+    color: #b0a695;
+}
+
+/* NAVBAR NAV */
+.health .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.health .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    position: relative;
+}
+
+.health .navbar .navbar-nav a:hover {
+    color: #EBE3D5;
+    border-bottom: 1px solid #EBE3D5;
+}
+
+/* NAVBAR JOIN ONLINE */
+.health .navbar .navbar-nav .satu {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.health .navbar .navbar-nav .satu:hover {
+    color: #241c15;
+}
+
+.health .navbar .navbar-nav .satu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.health .navbar .navbar-nav .satu:hover::after {
+    background-color: #EBE3D5;
+}
+
+/* NAVBAR IKON */
+.health .navbar .navbar-nav a .one {
+    display: block;
+    border-bottom: none; 
+}
+
+.health .navbar .navbar-nav a .one::after {
+    content: 'TIMETABLE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.health .navbar .navbar-nav a .one:hover::after {
+    opacity: 1;
+}
+
+.health .navbar .navbar-nav a .two {
+    display: block; 
+    border-bottom: none; 
+}
+
+.health .navbar .navbar-nav a .two::after {
+    content: 'LOCATION'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.health .navbar .navbar-nav a .two:hover::after {
+    opacity: 1;
+}
+
+.health .navbar .navbar-nav a .three {
+    display: block; 
+    border-bottom: none; 
+}
+
+.health .navbar .navbar-nav a .three::after {
+    content: 'PROFILE'; 
+    position: absolute;
+    bottom: -14px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.4rem;
+}
+
+.health .navbar .navbar-nav a .three:hover::after {
+    opacity: 1;
+}
+
+/* BAGIAN BERANDA / MENU UTAMA */
+.health .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/health.png');
+}
+
+.health .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.health .hero .content h1 {
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px #241c15;
+    line-height: 1.2;
+}
+
+.health .hero .content h1 span {
+    color: #241c15;
+    text-shadow: none;
+}
+
+.health .isii .bg {
+    background-color: #EBE3D5;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.health .isii .bg .konten {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.health .isii .bg .konten h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+.health .isii .bg .konten p {
+    font-family: 'Poppins', sans-serif;
+    color: #241c15;
+}
+
+/* FOOTER BARU */
+.health .footer {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.health .footer .isi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.health .kolomjudul,
+.health .isi {
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.health .kolomjudul {
+    width: 30%; 
+}
+
+.health .isi {
+    width: 65%; 
+}
+
+.health .footer .kolomjudul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color:white;
+}
+
+.health .footer .kolomjudul a span {
+    color: #b0a695;
+}
+
+.health .bawah {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}

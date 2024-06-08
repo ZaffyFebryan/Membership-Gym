@@ -1,0 +1,80 @@
+/* CSS UNTUK LOGIN */
+body {
+    background-image: url('register.png');
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.login {
+    background-color: #241c15;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+    margin-left: 56rem;
+    border-radius: 10px;
+}
+
+.login .kanan .satu {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color:#b0a695;
+}
+
+.login .kanan .dua {
+    font-size: 1.4rem;
+    font-weight: 560;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.login .kanan .tiga {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.login form {
+    font-size: 1.2rem;
+    font-weight: 560;
+    color: white;
+}
+
+.login form .b {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+
+.login form button {
+    color: white;
+    background-color: #b0a695;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: none;
+}
+
+.login a {
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* CSS UNTUK SIGN UP */
+.login .checkbox {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 400;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}

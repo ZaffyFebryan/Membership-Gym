@@ -1,0 +1,1280 @@
+/* ------------------------------------------------- FILE DASHBOARD ------------------------------------------------- */
+.dash {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.dash .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.dash .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-left: 29rem;
+}
+
+.dash .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.dash .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.dash .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.dash .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.dash .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.dash .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.dash .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.dash .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.dash .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+/* ------------------------------------------------- FILE ADMIN ------------------------------------------------- */
+.dtad {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.dtad .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.dtad .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.dtad .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.dtad .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.dtad .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.dtad .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.dtad .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.dtad .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.dtad .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.dtad .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.dtad .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.dtad table {
+    width: 97%;
+    border-collapse: collapse;
+}
+
+.dtad th, .dtad td {
+    padding: 12px;
+    text-align: left; 
+    border: 1px solid #573619; 
+}
+
+.dtad th {
+    background-color: #68472b; 
+}
+
+.dtad tr:nth-child(even) {
+    background-color: #a88462; 
+}
+
+.dtad tr:nth-child(odd) {
+    background-color: #8c6540;
+}
+
+.dtad .print-button {
+    background-color: #e0ac1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15%;
+    height: 8%;
+}
+
+.dtad .delete-container {
+    margin-bottom: 10px;
+}
+
+.dtad .delete-button {
+    background-color: #e0ac1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* ------------------------------------------------- FILE TAMBAH ADMIN ------------------------------------------------- */
+.tamadm {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.tamadm .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.tamadm .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.tamadm .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.tamadm .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.tamadm .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.tamadm .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.tamadm .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.tamadm .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.tamadm .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.tamadm .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.tamadm .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.tamadm .content {
+    margin-left: 250px;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.tamadm .form-container {
+    background-color: #68472b;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 460px;
+    margin: auto;
+}
+
+.tamadm .form-container h2 {
+    margin-bottom: 0.2rem;
+    color: #e0ac1c;
+}
+
+.tamadm .form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tamadm .form-container label {
+    margin-bottom: 0.2rem;
+    color: #ffffff;
+}
+
+.tamadm .form-container input {
+    margin-bottom: 0.6rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.tamadm .form-container input[type="submit"] {
+    background-color: #e0ac1c;
+    color: #241c15;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tamadm .form-container input[type="submit"]:hover {
+    background-color: #c79717;
+}
+
+/* ------------------------------------------------- FILE LAYANAN ------------------------------------------------- */
+.layadm {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.layadm .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.layadm .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.layadm .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.layadm .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.layadm .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.layadm .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.layadm .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.layadm .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.layadm .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.layadm .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.layadm .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.layadm table {
+    width: 97%;
+    border-collapse: collapse;
+}
+
+.layadm th, .layadm td {
+    padding: 12px;
+    text-align: left; 
+    border: 1px solid #573619; 
+}
+
+.layadm th {
+    background-color: #68472b; 
+}
+
+.layadm tr:nth-child(even) {
+    background-color: #a88462; 
+}
+
+.layadm tr:nth-child(odd) {
+    background-color: #8c6540;
+}
+
+.layadm .print-button {
+    background-color: #e0ac1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15%;
+    height: 8%;
+}
+
+/* ------------------------------------------------- FILE USER ------------------------------------------------- */
+.user {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.user .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.user .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.user .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.user .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.user .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.user .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.user .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.user .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.user .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.user .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.user .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.user table {
+    width: 97%;
+    border-collapse: collapse;
+}
+
+.user th, .user td {
+    padding: 12px;
+    text-align: left; 
+    border: 1px solid #573619; 
+}
+
+.user th {
+    background-color: #68472b; 
+}
+
+.user tr:nth-child(even) {
+    background-color: #a88462; 
+}
+
+.user tr:nth-child(odd) {
+    background-color: #8c6540;
+}
+
+.user .print-button {
+    background-color: #e0ac1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15%;
+    height: 6%;
+}
+
+/* ------------------------------------------------- FILE DATA TRAINER ------------------------------------------------- */
+.trainer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.trainer .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.trainer .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.trainer .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.trainer .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.trainer .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.trainer .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.trainer .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.trainer .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.trainer .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.trainer .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.trainer .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.trainer table {
+    width: 97%;
+    border-collapse: collapse;
+}
+
+.trainer th, .trainer td {
+    padding: 12px;
+    text-align: left; 
+    border: 1px solid #573619; 
+}
+
+.trainer th {
+    background-color: #68472b; 
+}
+
+.trainer tr:nth-child(even) {
+    background-color: #a88462; 
+}
+
+.trainer tr:nth-child(odd) {
+    background-color: #8c6540;
+}
+
+.trainer .print-button {
+    background-color: #e0ac1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15%;
+    height: 8%;
+}
+
+/* ------------------------------------------------- FILE DATA TRAINER ------------------------------------------------- */
+.lat {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.lat .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.lat .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.lat .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.lat .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.lat .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.lat .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.lat .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.lat .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.lat .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.lat .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.lat .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.lat table {
+    width: 97%;
+    border-collapse: collapse;
+}
+
+.lat th, .lat td {
+    padding: 12px;
+    text-align: left; 
+    border: 1px solid #573619; 
+}
+
+.lat th {
+    background-color: #68472b; 
+}
+
+.lat tr:nth-child(even) {
+    background-color: #a88462; 
+}
+
+.lat tr:nth-child(odd) {
+    background-color: #8c6540;
+}
+
+.lat .print-button {
+    background-color: #e0ac1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15%;
+    height: 6%;
+}
+
+/* ------------------------------------------------- FILE KONFIRMASI PEMBAYARAN ------------------------------------------------- */
+.konfirm {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.konfirm .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.konfirm .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.konfirm .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.konfirm .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.konfirm .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.konfirm .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.konfirm .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.konfirm .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.konfirm .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.konfirm .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.konfirm .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.konfirm table {
+    width: 97%;
+    border-collapse: collapse;
+}
+
+.konfirm th, .konfirm td {
+    padding: 12px;
+    text-align: left; 
+    border: 1px solid #573619; 
+}
+
+.konfirm th {
+    background-color: #68472b; 
+}
+
+.konfirm tr:nth-child(even) {
+    background-color: #a88462; 
+}
+
+.konfirm tr:nth-child(odd) {
+    background-color: #8c6540;
+}
+
+.konfirm .print-button {
+    background-color: #e0ac1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15%;
+    height: 6%;
+}
+
+/* ------------------------------------------------- FILE TAMBAH TRAINER ------------------------------------------------- */
+.tamtrain {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.tamtrain .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.tamtrain .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.tamtrain .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.tamtrain .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.tamtrain .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.tamtrain .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.tamtrain .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.tamtrain .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.tamtrain .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.tamtrain .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.tamtrain .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.tamtrain .content {
+    margin-left: 250px;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.tamtrain .form-container {
+    background-color: #68472b;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 460px;
+    margin: auto;
+}
+
+.tamtrain .form-container h2 {
+    margin-bottom: 0.2rem;
+    color: #e0ac1c;
+}
+
+.tamtrain .form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tamtrain .form-container label {
+    margin-bottom: 0.2rem;
+    color: #ffffff;
+}
+
+.tamtrain .form-container input {
+    margin-bottom: 0.6rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.tamtrain .form-container input[type="submit"] {
+    background-color: #e0ac1c;
+    color: #241c15;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tamtrain .form-container input[type="submit"]:hover {
+    background-color: #c79717;
+}
+
+/* ------------------------------------------------- FILE PROFIL ADMIN ------------------------------------------------- */
+.profad {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.profad .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.profad .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.profad .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.profad .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.profad .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.profad .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.profad .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.profad .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.profad .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.profad .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.profad .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.profad .content {
+    margin-left: 250px;
+    padding: 2rem;
+    flex-grow: 1;
+    background-color: #241c15;
+    color: #ffffff;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.profad .content .profile-container {
+    background-color: #68472b;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.profad .content .profile-container h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.profad .content .profil-item {
+    margin-bottom: 1rem;
+}
+
+.profad .content .profil-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.profad .content .profil-item input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.edit-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #e0ac1c;
+    color: #241c15;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.edit-button:hover {
+    background-color: #d19b1a;
+}
+
+/* ------------------------------------------------- FILE EDIT PROFIL ADMIN ------------------------------------------------- */
+.edprofad {
+    font-family: 'Poppins', sans-serif;
+    background-color: #241c15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.edprofad .content {
+    margin-left: 20rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.edprofad .content h2 span a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.edprofad .sidebar {
+    height: 100vh;
+    background-color: #68472b;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+}
+
+.edprofad .sidebar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.edprofad .sidebar-logo span {
+    color: #e0ac1c;
+}
+
+.edprofad .sidebar-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.edprofad .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.edprofad .sidebar-links a:hover {
+    color: #e0ac1c;
+}
+
+.edprofad .sidebar-links .submenu {
+    display: none;
+    flex-direction: column;
+    margin-left: 1rem; 
+}
+
+.edprofad .sidebar-links .submenu a {
+    margin: 0.5rem 0;
+}
+
+.edprofad .sidebar-links .has-submenu:hover .submenu {
+    display: flex;
+}
+
+.edprofad .content {
+    margin-left: 250px;
+    padding: 2rem;
+    flex-grow: 1;
+    background-color: #241c15;
+    color: #ffffff;
+    padding-top: 60px; 
+}
+
+.edprofad .edit-container {
+    background-color: #68472b;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.edprofad .edit-container h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.edprofad .edit-item {
+    margin-bottom: 1rem;
+}
+
+.edprofad .edit-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.edprofad .edit-item input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.edprofad .edit-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #e0ac1c;
+    color: #241c15;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.edprofad .edit-button:hover {
+    background-color: #d19b1a;
+}
